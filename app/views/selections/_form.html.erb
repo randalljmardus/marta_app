@@ -1,0 +1,31 @@
+<%= form_for(@selection) do |f| %>
+  <% if @selection.errors.any? %>
+
+<div id="error_explanation">
+
+<h2><%= pluralize(@selection.errors.count, "error") %> prohibited this selection from being saved:</h2>
+
+  <ul>
+    <% @selection.errors.full_messages.each do |msg| %>
+      <li><%= msg %></li>
+    <% end %>
+  </ul>
+</div>
+
+<% end %>
+
+<!--We're just gonna have one field: Select a station name! This page serves the same purpose as 'welcome/radioselect'.-->
+
+<div class="field">
+
+<!-- Below is the tag for a drop-down menu -->
+
+  <%= f.select :station_name, Station.all.collect {|station| [ station.name ] } %>
+
+<!-- We will collect a list of all the Stations, passing their names, and assign whichever is chosen to the Selection's parameter 'station_name' -->
+</div>
+
+<div class="actions">
+  <%= f.submit 'Check for buses!', :class=>'btn submit-button' %>
+</div>
+<% end %>

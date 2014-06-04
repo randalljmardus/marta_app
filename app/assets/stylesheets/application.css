@@ -1,0 +1,84 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+.nav-color{
+	background-color: #01DFD7;
+}
+
+.nav a{
+	color:#FFC61E;
+}
+
+.blue-bg{
+	background-color: #008CCC;
+}
+.blue-text{
+	color: #008CCC;
+}
+
+.yellow-bg{
+	background-color: #FFC61E;
+}
+.yellow-text{
+	color: #FFC61E;
+}
+
+.orange-bg{
+	background-color: #F77F00;
+}
+.orange-text{
+	color: #F77F00;
+}
+
+.submit-button{
+	background-color: #008CCC;
+	color: #FFC61E;
+	margin:15px;
+}
+
+.scroll {
+    position:relative;
+    top:0;
+    left:0;
+}
+
+.neg-twenty-margin{
+	margin-bottom: -20px; 	
+}
+
+.choose-a-station {
+	background-color: #008CCC;
+	color: black;
+	text-shadow: 0 0;
+	padding-left:2px;
+}
+
+.radios {
+	padding:15px;
+}
+
+.dropdown {
+	margin:10px;
+}
+
+.homepage {
+	background: url('marta2-opaque.jpg') no-repeat center center fixed;
+	-moz-background-size: cover;
+	-webkit-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	color: white;
+	text-shadow: 0.5px 0.5px #2E2E2E;
